@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
-import ProposalCard from "@/content/proposal/content/ProposalCard";
+
 import Loading from "@/app/Loading";
+import ProposalCard from "@/content/proposal/content/ProposalCard";
+import { useEffect, useState } from "react";
 
 export default function ProposalClient({ id }) {
   const [proposal, setProposal] = useState(null);
@@ -31,21 +32,21 @@ export default function ProposalClient({ id }) {
 
   return (
     <div className="lg:mt-30 w-screen items-start justify-center flex">
-        <ProposalCard
+      <ProposalCard
         className={"md:rounded-[25px] w-screen"}
-          id={proposal.id}
-          userName={proposal.userName}
-          userInitials={proposal.userInitials}
-          time={proposal.time}
-          title={proposal.title}
-          text={proposal.text}
-          logo={proposal.author_img}
-          media={proposal.media}
-          likes={proposal.likes}
-          dislikes={proposal.dislikes}
-          comments={proposal.comments}
-          specie={proposal.author_type}
-        />
+        id={proposal.id}
+        userName={proposal.userName}
+        userInitials={proposal.userInitials}
+        time={proposal.time}
+        title={proposal.title}
+        text={proposal.text}
+        logo={proposal.author_img}
+        media={proposal.media}
+        likes={proposal.likes}
+        dislikes={proposal.dislikes}
+        comments={proposal.comments}
+        specie={proposal.author_type}
+      />
     </div>
   );
 }

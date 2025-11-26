@@ -1,5 +1,7 @@
 "use client";
 
+// Keep the capitalized Loading import to match the file name in
+// case-sensitive production environments.
 import Loading from "@/app/Loading";
 import ProposalCard from "@/content/proposal/content/ProposalCard";
 import { useEffect, useState } from "react";
